@@ -1,0 +1,146 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("NEXTAUTH_DATABASE_URL")
+}
+
+model users {
+  id              Int            @id @default(autoincrement())
+  username        String         @db.VarChar(100)
+  email           String         @unique @db.VarChar(50)
+  password        String
+  company_name    String?        @unique @db.VarChar(70)
+  phone_number    String?
+  address         String?
+  department      String?
+  role            String?
+  drawing2Dfiles  Drawing_2D[]
+  drawing3Dfiles  Drawing_3D[]
+  drawingMBfiles  Drawing_MB[]
+  drawingABfiles  Drawing_AB[]
+  drawingBOQfiles Drawing_BOQ[]
+  kanbanCards     Kanban_Cards[]
+}
+
+model Drawing_2D {
+  id            Int             @id @default(autoincrement())
+  filename      String
+  fileUrl       String
+  version       Int
+  createdAt     DateTime        @default(now())
+  userId        Int
+  user          users           @relation(fields: [userId], references: [id])
+  markerGroup2d MarkerGroup2D[]
+  approve       Boolean         @default(false)
+}
+
+model Drawing_3D {
+  id            Int             @id @default(autoincrement())
+  filename      String
+  fileUrl       String
+  version       Int
+  createdAt     DateTime        @default(now())
+  userId        Int
+  user          users           @relation(fields: [userId], references: [id])
+  markerGroup3d MarkerGroup3D[]
+  approve       Boolean         @default(false)
+}
+
+model Drawing_MB {
+  id            Int             @id @default(autoincrement())
+  filename      String
+  fileUrl       String
+  version       Int
+  createdAt     DateTime        @default(now())
+  userId        Int
+  user          users           @relation(fields: [userId], references: [id])
+  markerGroupMb MarkerGroupMB[]
+  approve       Boolean         @default(false)
+}
+
+model Drawing_AB {
+  id            Int             @id @default(autoincrement())
+  filename      String
+  fileUrl       String
+  version       Int
+  createdAt     DateTime        @default(now())
+  userId        Int
+  user          users           @relation(fields: [userId], references: [id])
+  markerGroupAb MarkerGroupAB[]
+  approve       Boolean         @default(false)
+}
+
+model Drawing_BOQ {
+  id             Int              @id @default(autoincrement())
+  filename       String
+  fileUrl        String
+  version        Int
+  createdAt      DateTime         @default(now())
+  userId         Int
+  user           users            @relation(fields: [userId], references: [id])
+  markerGroupBoq MarkerGroupBoq[]
+  approve        Boolean          @default(false)
+}
+
+model MarkerGroup2D {
+  id          Int         @id @default(autoincrement())
+  data        Json
+  createdAt   DateTime    @default(now())
+  drawing2DId Int
+  drawing2D   Drawing_2D? @relation(fields: [drawing2DId], references: [id])
+}
+
+model MarkerGroup3D {
+  id          Int         @id @default(autoincrement())
+  data        Json
+  createdAt   DateTime    @default(now())
+  drawing3DId Int
+  drawing3D   Drawing_3D? @relation(fields: [drawing3DId], references: [id])
+}
+
+model MarkerGroupMB {
+  id          Int         @id @default(autoincrement())
+  data        Json
+  createdAt   DateTime    @default(now())
+  drawingMbId Int
+  drawingMb   Drawing_MB? @relation(fields: [drawingMbId], references: [id])
+}
+
+model MarkerGroupAB {
+  id          Int         @id @default(autoincrement())
+  data        Json
+  createdAt   DateTime    @default(now())
+  drawingAbId Int
+  drawingAb   Drawing_AB? @relation(fields: [drawingAbId], references: [id])
+}
+
+model MarkerGroupBoq {
+  id           Int          @id @default(autoincrement())
+  data         Json
+  createdAt    DateTime     @default(now())
+  drawingBoqId Int
+  drawingBoq   Drawing_BOQ? @relation(fields: [drawingBoqId], references: [id])
+}
+
+model accessControl {
+  id           Int     @id @default(autoincrement())
+  username     String  @db.VarChar(100)
+  email        String  @unique @db.VarChar(50)
+  department   String
+  password     String
+  role         String  @default("employee")
+  company_name String?
+  phone_number String?
+}
+
+model Kanban_Cards {
+  id     Int    @id @default(autoincrement())
+  column String
+  title  String
+  userId Int
+  user   users  @relation(fields: [userId], references: [id])
+}

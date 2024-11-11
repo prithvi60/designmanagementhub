@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-file-upload-button {
+  background-color: #65a34e;
+  padding: 10px;
+  border-radius: 50px;
+  color: whitesmoke;
+  border: none;
+}
+
+::-webkit-file-upload-button:hover {
+  background-color: #0e122b;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom scrollbar for Sidebar */
+
+.sidebar_scroll::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 15px;
+}
+
+.sidebar_scroll_2::-webkit-scrollbar {
+  height: 8px;
+  border-radius: 15px;
+}
+
+.sidebar_scroll::-webkit-scrollbar-track {
+  background: #1e3a8a;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.sidebar_scroll::-webkit-scrollbar-thumb {
+  background: #65a34e;
+  border-radius: 5px;
+}
+
+.sidebar_scroll_2::-webkit-scrollbar-track {
+  background: #394b7a;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.sidebar_scroll_2::-webkit-scrollbar-thumb {
+  background: #65a34e;
+  border-radius: 5px;
+}
+
+.scrollbar-hidden {
+  overflow: auto; /* Allow scrolling */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Opera) */
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar width */
+  background: transparent; /* Optional: make background transparent */
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hidden {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
