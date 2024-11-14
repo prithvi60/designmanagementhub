@@ -14,7 +14,7 @@ const Header = (props: {
 
   const role = session?.user?.role;
   return (
-    <header className="sticky top-0 z-[1000] flex w-full bg-white drop-shadow-1">
+    <header className="sticky top-0 z-[1000] flex w-full  drop-shadow-1 bg-gradient-to-r from-[#081526] to-[#1D4D8C] via-[#0E2441] ">
       <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-2 md:px-6 2xl:px-11">
         <div className="flex items-center w-max xl:w-[85%] overflow-hidden gap-3 md:gap-5 ">
           {/* <!-- Hamburger Toggle BTN --> */}
@@ -56,16 +56,17 @@ const Header = (props: {
           {/* <!-- Hamburger Toggle BTN --> */}
           {/* </div> */}
           {/* <div > */}
-          <div className="w-64 h-10 relative hidden sm:block">
+          {/* ADd dmh logo */}
+          {/* <div className="w-64 h-10 relative hidden sm:block">
             <Image alt="logo" src={"/logo/newlogo.png"} fill />
-          </div>
+          </div> */}
           {/* <div className=""> */}
-          {role !== "super admin" && role !== "contact admin" &&
+          {/* {role !== "super admin" && role !== "contact admin" &&
             role !== "design admin" && (
               <div className="hidden sm:block sm:max-w-48 md:max-w-72 xl:max-w-xl w-full">
                 <MarqueeSb />
               </div>
-            )}
+            )} */}
           {/* </div> */}
         </div>
 

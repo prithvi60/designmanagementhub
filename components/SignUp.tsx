@@ -94,7 +94,7 @@ export const SignUp = () => {
                     recipientEmail: `${data.email}`,
                     recipientType: "client",
                     employeeId: `${data.email}`,
-                    subject2: `ENSILETA INTERIORS- Welcome ${data.username}`,
+                    subject2: `Design Management Hub INTERIORS- Welcome ${data.username}`,
                     message2: `<h4>Hello ${data.username},</h4>
       <p>
         Congratulations on successfully signing up for ${data.company_name}! Your account is now active, and you can begin exploring our services and resources. You can seamlessly review the drawings and obtain approval, all in one place.
@@ -191,7 +191,7 @@ export const SignUp = () => {
                         </div>
                         <span className="mt-15 inline-block">
                             <Image
-                                src="/cover/ensiletaclients.png"
+                                src="/cover/Design Management Hubclients.png"
                                 alt="clients"
                                 width={450}
                                 height={250}

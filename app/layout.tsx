@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ensileta Customer Portal",
+  title: "Design Management Hub Customer Portal",
   description: "View and manage your drawings easily",
 };
 

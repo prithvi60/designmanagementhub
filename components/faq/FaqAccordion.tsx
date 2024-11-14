@@ -13,12 +13,12 @@ export const BasicFAQ = () => {
                 <h3 className="mb-4 text-center text-3xl font-semibold">
                     Frequently asked questions
                 </h3>
-                <Question title="What services does Ensileta Interior Company provide?" defaultOpen>
+                <Question title="What services does Design Management Hub Interior Company provide?" defaultOpen>
                     <p>
                         We offer a wide range of interior design services, including residential design, commercial space planning, custom furniture design, kitchen and bathroom remodeling, lighting design, and more. Our goal is to create personalized spaces that reflect your style and meet your functional needs.
                     </p>
                 </Question>
-                <Question title="How does the design process work at Ensileta?">
+                <Question title="How does the design process work at Design Management Hub?">
                     <p>
                         Our process begins with a consultation where we understand your vision, preferences, and budget. After that, we present design concepts, materials, and color schemes. Once the design is finalized, we manage the entire project from sourcing materials to overseeing installation, ensuring a seamless experience.
                     </p>

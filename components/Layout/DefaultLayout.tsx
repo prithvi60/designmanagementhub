@@ -14,7 +14,7 @@ export default function DefaultLayout({
     <>
       {/* <!-- ===== Page Wrapper Start ===== --> */}
       {/* overflow-hidden */}
-      <div className="h-screen">
+      <div className="h-screen bg-gradient-to-r from-[#081526] to-[#1D4D8C] via-[#0E2441] ">
         {/* <!-- ===== Sidebar Start ===== --> */}
         <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         {/* <!-- ===== Sidebar End ===== --> */}
@@ -32,7 +32,7 @@ export default function DefaultLayout({
             </div>
           </main>
           {/* <!-- ===== Main Content End ===== --> */}
-          <Footer />
+          {/* <Footer /> */}
           {/* <Footer /> */}
         </div>
         {/* <!-- ===== Content Area End ===== --> */}

@@ -86,16 +86,16 @@ export default function UploadFile({
             //                 recipientType: "admin",
             //                 subject3:
             //                     fileType === "view2d"
-            //                         ? `ENSILETA INTERIORS -                            New version - 2D Drawing`
+            //                         ? `Design Management Hub INTERIORS -                            New version - 2D Drawing`
             //                         : fileType === "view3d"
-            //                             ? `ENSILETA INTERIORS -                            New version - 3D Drawing`
+            //                             ? `Design Management Hub INTERIORS -                            New version - 3D Drawing`
             //                             : fileType === "viewboq"
-            //                                 ? `ENSILETA INTERIORS -                            New version - BOQ Drawing`
+            //                                 ? `Design Management Hub INTERIORS -                            New version - BOQ Drawing`
             //                                 : fileType === "moodBoard"
-            //                                     ? `ENSILETA INTERIORS -                            New version - Mood Board Drawing`
+            //                                     ? `Design Management Hub INTERIORS -                            New version - Mood Board Drawing`
             //                                     : fileType === "approvalBoard"
-            //                                         ? `ENSILETA INTERIORS -                            New version - Approval Board Drawing`
-            //                                         : `ENSILETA INTERIORS -                            New version - Unknown Filetype Drawing`,
+            //                                         ? `Design Management Hub INTERIORS -                            New version - Approval Board Drawing`
+            //                                         : `Design Management Hub INTERIORS -                            New version - Unknown Filetype Drawing`,
             //                 message3: `<p>
             //     We have updated the new version of ${fileType === "view2d"
             //                         ? "2D Drawing"

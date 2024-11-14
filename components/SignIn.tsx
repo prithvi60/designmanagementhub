@@ -97,7 +97,7 @@ export const SignIn = () => {
             </div>
             <span className="mt-15 inline-block">
               <Image
-                src="/cover/ensiletaclients.png"
+                src="/cover/Design Management Hubclients.png"
                 alt="clients"
                 width={450}
                 height={250}
@@ -110,7 +110,7 @@ export const SignIn = () => {
           <div className="w-full py-4 text-[#0E132A] space-y-6">
             {/* <span className="mb-1.5 block font-medium ">Start for free</span> */}
             <h2 className="text-2xl font-bold text-[#0E132A] sm:text-2xl w-full text-center">
-              Welcome to Ensileta Interiors
+              Welcome to Design Management Hub Interiors
             </h2>
             {/* <h4 className='mb-7 text-xl font-semibold'>Sign in</h4> */}
             {/* Form with validation */}

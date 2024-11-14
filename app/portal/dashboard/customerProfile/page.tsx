@@ -67,7 +67,7 @@ export default Page
                                 <div className='py-5 px-10 space-y-6'>
                                     <div className='flex items-center gap-3'>
                                         <h4 className='text-lg font-semibold'>Company Name:</h4>
-                                        <p>Ensileta</p>
+                                        <p>Design Management Hub</p>
                                     </div>
                                     <div className='flex items-center gap-3'>
                                         <h4 className='text-lg font-semibold'>Phone Number:</h4>

@@ -19,15 +19,15 @@ export function generateEmailTemplate(mainContent: any) {
     <body>
       <div class="container">
         <h2>Hi Sir/Madam,</h2>
-        <p>Greetings from <span class="contain">ENSILETA INTERIORS</span></p>
+        <p>Greetings from <span class="contain">Design Management Hub INTERIORS</span></p>
         ${mainContent}
         <p>Best regards,</p>
         <div>
           <img alt="company logo" src="${imageUrl}" />
-          <h3>Ensileta Interior</h3>
+          <h3>Design Management Hub Interior</h3>
           <p><strong>Address:</strong> No.77 Old no:43 Second floor, Chamiers Rd, Chennai, Tamil Nadu 600028</p>
           <p><strong>Contact Now:</strong> 9380289546</p>
-          <p><strong>Website:</strong> <a href="https://www.ensileta.com" target="_blank">www.ensileta.com</a></p>
+          <p><strong>Website:</strong> <a href="https://www.Design Management Hub.com" target="_blank">www.Design Management Hub.com</a></p>
         </div>
       </div>
     </body>

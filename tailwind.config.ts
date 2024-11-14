@@ -19,8 +19,8 @@ const config: Config = {
     },
     extend: {
       colors: {
-        primary: "#394b7a",
-        secondary: "#65a34e",
+        primary: "#0E2441",
+        secondary: "#F7BD3B",
         success: "#65a34e",
         warning: "#EB1C23", //upto this
         danger: "#D34053",

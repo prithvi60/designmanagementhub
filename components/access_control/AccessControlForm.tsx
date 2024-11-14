@@ -71,7 +71,7 @@ const AccessControlForm = () => {
                     recipientEmail: `${RoleBased?.user?.email}`,
                     recipientType: "client",
                     employeeId: `${data.email}`,
-                    subject2: `ENSILETA INTERIORS- Welcome ${data.username}`,
+                    subject2: `Design Management Hub INTERIORS- Welcome ${data.username}`,
                     message2: `
                             <h2>Hello ${data.username},</h2>
               <p>
@@ -164,7 +164,7 @@ const AccessControlForm = () => {
                     <div className="w-full sm:p-4 sm:px-16 sm:py-0 xl:w-3/4">
                         <div className="w-full p-4 sm:p-12.5 xl:p-17.5 text-[#0E132A]">
                             <h2 className="mb-9 text-2xl font-bold text-[#0E132A] sm:text-title-xl2 text-center">
-                                Add a Team Member to the Ensileta Portal confidently
+                                Add a Team Member to the Design Management Hub Portal confidently
                             </h2>
 
                             <form onSubmit={handleSubmit(onSubmit)}>

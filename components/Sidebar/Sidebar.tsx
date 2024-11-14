@@ -16,7 +16,7 @@ import { useParams } from "next/navigation";
 import { MarqueeSb } from "../Header/MarqueeUpdated";
 import { FaFlipboard } from "react-icons/fa";
 import { MdApproval } from "react-icons/md";
-
+// import TwoD from "../../public/logo/2d.svg";
 interface SidebarProps {
   sidebarOpen: boolean;
   setSidebarOpen: (arg: boolean) => void;
