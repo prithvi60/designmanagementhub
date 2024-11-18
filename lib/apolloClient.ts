@@ -11,7 +11,7 @@ import createUploadLink from "apollo-upload-client/createUploadLink.mjs";
 
 const getGraphqlUri = () =>
   process.env.NODE_ENV === "production"
-    ? "https://Design Management Hub-portal.vercel.app/api/graphql"
+    ? "https://designhub.webibee.com/api/graphql"
     : "http://localhost:3000/api/graphql";
 
 // const httpLink = new HttpLink({
