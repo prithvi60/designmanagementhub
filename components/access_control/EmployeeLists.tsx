@@ -20,7 +20,7 @@ export const EmployeeLists = () => {
     }
 
     return (
-        <div className="space-y-7 p-5">
+        <div className="space-y-7 p-5 text-white">
             <h2 className="font-semibold text-3xl">Team Lists :</h2>
             {data?.getAccessControlUsers.length > 0 ? (
                 <ul className="list-decimal ml-5">
@@ -33,7 +33,7 @@ export const EmployeeLists = () => {
                     )}
                 </ul>
             ) : (
-                <p className="text-lg flex items-center gap-3 text-black capitalize">
+                <p className="text-lg flex items-center gap-3 text-white capitalize">
                     <span>
                         <CiNoWaitingSign className="text-xl text-slate-500" />
                     </span>

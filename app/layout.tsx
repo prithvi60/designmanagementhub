@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./Providers";
 import { Toaster } from "react-hot-toast";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const poppins = Poppins({
+const poppins = Quicksand({
   subsets: ["latin"],
   display: "swap",
   // variable: "--font-poppins",
@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Design Management Hub Customer Portal",
+  title: "Design Management Hub",
   description: "View and manage your drawings easily",
 };
 

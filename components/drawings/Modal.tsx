@@ -428,7 +428,7 @@ const SpringModal2 = ({
             </div>
           </motion.div>
           <div className="fixed top-0 left-0 flex">
-            <div className="p-2 text-white bg-secondary">
+            <div className="p-2 text-black bg-secondary">
               {index + 1} / {images.length}
             </div>
             <button
@@ -436,7 +436,7 @@ const SpringModal2 = ({
                 e.stopPropagation(); // Prevent event from bubbling up
                 handleClose();
               }}
-              className="bg-secondary hover:bg-primary transition-colors text-white p-2 ml-4"
+              className="bg-secondary hover:bg-primary transition-colors text-black p-2 ml-4"
             >
               Close Screen
             </button>

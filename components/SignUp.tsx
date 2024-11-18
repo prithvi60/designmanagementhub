@@ -184,7 +184,7 @@ export const SignUp = () => {
     return (
         <div className="rounded-md border-4 border-secondary bg-white shadow-xl m-4">
             <div className="flex flex-wrap items-start relative">
-                <div className="hidden w-full xl:block xl:w-1/2 lg:sticky lg:top-0 py-4 sm:py-12.5 xl:py-17.5">
+                {/* <div className="hidden w-full xl:block xl:w-1/2 lg:sticky lg:top-0 py-4 sm:py-12.5 xl:py-17.5">
                     <div className="p-4 sm:px-16 sm:py-0 space-y-5 text-center flex justify-center flex-col">
                         <div className="w-64 h-14 relative items-center flex justify-center">
                             <Image alt="logo" src={"/logo/newlogo.png"} fill />
@@ -198,9 +198,9 @@ export const SignUp = () => {
                             />
                         </span>
                     </div>
-                </div>
+                </div> */}
 
-                <div className="w-full p-4 sm:px-6 sm:py-0 xl:w-1/2 xl:border-l-2">
+                <div className="w-full p-4 sm:px-6 sm:py-0 xl:border-l-2">
                     <div className="w-full px-4 py-7 sm:p-12.5 xl:p-17.5 text-[#0E132A]">
                         {/* <span className="mb-1.5 block font-medium text-sm md:text-base">Start for free</span> */}
                         <h2 className="mb-6 text-lg font-bold text-[#0E132A] md:text-2xl">

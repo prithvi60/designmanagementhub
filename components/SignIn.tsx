@@ -88,43 +88,40 @@ export const SignIn = () => {
   }, [session, router]);
 
   return (
-    <div className="rounded-md border-4 border-secondary bg-white shadow-xl m-4">
+    <div className="rounded-md border-4 border-secondary bg-primary shadow-xl m-4">
       <div className="flex flex-wrap items-center p-4 md:p-7 xl:divide-x-2 divide-secondary">
         <div className="hidden w-full xl:block xl:w-1/2">
-          <div className="p-4 sm:px-16 sm:py-0 space-y-5 text-center flex justify-center flex-col">
-            <div className="w-64 h-14 relative items-center flex justify-center">
-              <Image alt="logo" src={"/logo/newlogo.png"} fill />
+          <div className="p-4 sm:px-16 sm:py-0 space-y-5 text-center flex justify-start flex-col">
+            <div className=" relative items-center flex justify-center">
+              <Image alt="logo" src={"/logo/new-logo.png"} width={50 }height={50} />
             </div>
             <span className="mt-15 inline-block">
-              <Image
-                src="/cover/Design Management Hubclients.png"
-                alt="clients"
-                width={450}
-                height={250}
-              />
+            <h2 className="text-2xl font-bold text-white sm:text-2xl w-full text-center">
+              Welcome to Design Management Hub Interiors
+            </h2> 
             </span>
           </div>
         </div>
 
         <div className="w-full p-4 sm:px-16 sm:py-0 xl:w-1/2 ">
-          <div className="w-full py-4 text-[#0E132A] space-y-6">
-            {/* <span className="mb-1.5 block font-medium ">Start for free</span> */}
-            <h2 className="text-2xl font-bold text-[#0E132A] sm:text-2xl w-full text-center">
+          <div className="w-full py-4 text-white space-y-6">
+            {/* <span className="mb-1.5 block font-medium ">Start for free</span>
+            <h2 className="text-2xl font-bold text-white sm:text-2xl w-full text-center">
               Welcome to Design Management Hub Interiors
-            </h2>
+            </h2> */}
             {/* <h4 className='mb-7 text-xl font-semibold'>Sign in</h4> */}
             {/* Form with validation */}
 
             <form onSubmit={handleSubmit(onSubmit)} className="px-4 sm:px-12.5 xl:px-17.5 space-y-7 relative">
               <div className="mb-4 relative">
-                <label className="mb-2.5 block font-medium text-[#0E132A]">
+                <label className="mb-2.5 block font-medium text-white">
                   Email
                 </label>
                 <div className="relative">
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="w-full border border-stroke bg-transparent py-2 pl-6 pr-10 text-[#0E132A] outline-none focus:border-primary focus-visible:shadow-none"
+                    className="w-full border border-stroke bg-transparent py-2 pl-6 pr-10 text-white outline-none focus:border-primary focus-visible:shadow-none"
                     {...register("email")}
                   />
 
@@ -154,14 +151,14 @@ export const SignIn = () => {
               </div>
 
               <div className="mb-6 relative">
-                <label className="mb-2.5 block font-medium text-[#0E132A]">
+                <label className="mb-2.5 block font-medium text-white">
                   Password
                 </label>
                 <div className="relative">
                   <input
                     type={showPassword ? "text" : "password"}
                     placeholder="6+ Characters, 1 Capital letter"
-                    className="w-full border border-stroke bg-transparent py-2 pl-6 pr-10 text-[#0E132A] outline-none focus:border-primary focus-visible:shadow-none"
+                    className="w-full border border-stroke bg-transparent py-2 pl-6 pr-10 text-white outline-none focus:border-primary focus-visible:shadow-none"
                     {...register("password")}
                   />
 

@@ -86,13 +86,13 @@ const Board = ({ userId, role }: { userId: any, role: any }) => {
     };
 
     return (
-        <div className="px-6 py-8 md:py-12 overflow-scroll scrollbar flex flex-col justify-center items-center">
+        <div className="px-6 py-8 md:py-12 overflow-scroll scrollbar flex flex-col justify-center items-center text-white">
             <div className="flex justify-between h-auto sidebar_scroll_2 w-full gap-3 overflow-x-scroll py-12">
                 <div className="flex flex-col items-center">
                     <Column
                         title="2D Note"
                         column="2D Note"
-                        headingColor="text-neutral-500"
+                        headingColor="text-white"
                         cards={cards}
                         setCards={setCards}
                         userId={userId}
@@ -104,7 +104,7 @@ const Board = ({ userId, role }: { userId: any, role: any }) => {
                     <Column
                         title="3D Note"
                         column="3D Note"
-                        headingColor="text-yellow-200"
+                        headingColor="text-white"
                         cards={cards}
                         setCards={setCards}
                         userId={userId}
@@ -116,7 +116,7 @@ const Board = ({ userId, role }: { userId: any, role: any }) => {
                     <Column
                         title="Mood Board Note"
                         column="Mood Board Note"
-                        headingColor="text-yellow-200"
+                        headingColor="text-white"
                         cards={cards}
                         setCards={setCards}
                         userId={userId}
@@ -128,7 +128,7 @@ const Board = ({ userId, role }: { userId: any, role: any }) => {
                     <Column
                         title="Approval Board Note"
                         column="Approval Board Note"
-                        headingColor="text-yellow-200"
+                        headingColor="text-white"
                         cards={cards}
                         setCards={setCards}
                         userId={userId}
@@ -140,7 +140,7 @@ const Board = ({ userId, role }: { userId: any, role: any }) => {
                     <Column
                         title="BOQ Note"
                         column="BOQ Note"
-                        headingColor="text-blue-200"
+                        headingColor="text-white"
                         cards={cards}
                         setCards={setCards}
                         userId={userId}
@@ -269,7 +269,7 @@ const Column = ({
     return (
         <div className="min-w-56 md:w-full shrink-0">
             <div className="mb-3 flex items-center justify-between">
-                <h3 className={`font-medium text-primary`}>{title}</h3>
+                <h3 className={`font-medium text-white`}>{title}</h3>
                 {/* <span className="rounded text-sm text-neutral-400">
                     {filteredCards.length}
                 </span> */}
@@ -556,7 +556,7 @@ const AddCard = ({ column, setCards, cards, userId, refetch }: any) => {
                 <motion.button
                     layout
                     onClick={() => setAdding(true)}
-                    className="flex w-full items-center gap-1.5 px-3 py-1.5 text-xs text-primary transition-colors hover:text-primary/80"
+                    className="flex w-full items-center gap-1.5 px-3 py-1.5 text-xs text-white transition-colors hover:text-white/80"
                 >
                     <span>Add card</span>
                     <FiPlus />

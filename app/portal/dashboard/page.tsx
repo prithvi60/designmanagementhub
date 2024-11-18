@@ -11,12 +11,12 @@ const Page = () => {
     <DefaultLayout>
       <div className="w-full h-[70vh] overflow-auto flex flex-col items-center justify-center gap-6">
         <Image
-          src={"/logo/newlogo.png"}
-          width={450}
-          height={450}
+          src={"/logo/new-logo.png"}
+          width={80}
+          height={80}
           alt="bg-image"
         />
-        <p className="text-lg sm:text-2xl font-semibold font-satoshi leading-6 sm:leading-snug tracking-wide italic text-primary w-full text-center sm:w-4/5">
+        <p className="text-lg sm:text-2xl font-semibold font-satoshi leading-6 sm:leading-snug tracking-wide italic text-white w-full text-center sm:w-4/5">
           Decorating is not about making stage sets, it’s not about making
           pretty pictures for the magazines; it’s really about creating a
           quality of life, a beauty that nourishes the soul.

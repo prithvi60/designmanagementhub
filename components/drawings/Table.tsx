@@ -183,10 +183,10 @@ export const SuperAdminTable = ({
 }) => {
     return (
         <div className="md:w-full w-[90vw] overflow-hidden">
-            <div className="w-full bg-white shadow-lg rounded-lg overflow-x-scroll xl:overflow-hidden sidebar_scroll_2">
+            <div className="w-full bg-[#FAFAFA] shadow-lg rounded-lg overflow-x-scroll xl:overflow-hidden sidebar_scroll_2">
                 <table className="w-full min-w-[500px]">
                     <thead>
-                        <tr className="border-b-[1px] border-slate-200 text-slate-400 text-sm uppercase">
+                        <tr className="border-b-[1px] border-slate-200 text-black text-sm uppercase font-bold">
                             <th className="text-start p-2 sm:p-4 font-medium">Drawing</th>
                             <th className="text-start p-2 sm:p-4 font-medium">Email</th>
                             <th className="text-start p-2 sm:p-4 font-medium">Version</th>

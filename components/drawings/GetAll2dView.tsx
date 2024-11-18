@@ -134,7 +134,7 @@ export const GetAll2dView: React.FC<GetAll2DViewProps> = ({
   return (
 
     <div className="h-full w-full pt-6 md:p-10 space-y-5">
-      <h2 className="text-3xl w-full text-center font-semibold caption-bottom tracking-wide mb-10">
+      <h2 className="text-3xl w-full text-center font-semibold caption-bottom tracking-wide mb-10 text-white">
         {title}
       </h2>
       {RoleBased?.user?.role === "super admin" ||
@@ -163,7 +163,7 @@ export const GetAll2dView: React.FC<GetAll2DViewProps> = ({
             <button
               disabled={isApproved || isApproving}
               type="submit"
-              className="cursor-pointer w-full sm:w-1/2 p-4 shadow-md select-none bg-secondary text-white hover:bg-primary disabled:bg-opacity-70 disabled:cursor-not-allowed"
+              className="cursor-pointer w-full sm:w-1/2 p-4 shadow-md select-none bg-secondary text-black hover:bg-primary disabled:bg-opacity-70 disabled:cursor-not-allowed"
               onClick={() => setIsOpen(true)}
             >
               {isApproving
@@ -177,7 +177,7 @@ export const GetAll2dView: React.FC<GetAll2DViewProps> = ({
               <span>
                 <BiSolidMessageRoundedDots className="text-xl md:text-2xl text-secondary" />
               </span>
-              <p>Please review the drawings and click the &apos;Approve&apos;
+              <p className="text-white">Please review the drawings and click the &apos;Approve&apos;
                 button to confirm if this version is acceptable. You can add
                 comments in the &apos;Remarks&apos; section by viewing the drawing
                 in fullscreen and annotating directly on the image.</p>

@@ -9,11 +9,11 @@ import useMeasure from "react-use-measure";
 export const BasicFAQ = () => {
     return (
         <div className="px-4 py-12">
-            <div className="mx-auto max-w-3xl">
+            <div className="mx-auto max-w-3xl text-white">
                 <h3 className="mb-4 text-center text-3xl font-semibold">
                     Frequently asked questions
                 </h3>
-                <Question title="What services does Design Management Hub Interior Company provide?" defaultOpen>
+                {/* <Question title="What services does Design Management Hub Interior Company provide?" defaultOpen>
                     <p>
                         We offer a wide range of interior design services, including residential design, commercial space planning, custom furniture design, kitchen and bathroom remodeling, lighting design, and more. Our goal is to create personalized spaces that reflect your style and meet your functional needs.
                     </p>
@@ -22,7 +22,7 @@ export const BasicFAQ = () => {
                     <p>
                         Our process begins with a consultation where we understand your vision, preferences, and budget. After that, we present design concepts, materials, and color schemes. Once the design is finalized, we manage the entire project from sourcing materials to overseeing installation, ensuring a seamless experience.
                     </p>
-                </Question>
+                </Question> */}
                 <Question title="How long does a typical interior design project take?">
                     <p>
                         The timeline for a project varies depending on its size and complexity. For smaller projects, such as a single room, it may take 4-6 weeks. Larger projects like a full home or commercial space can take several months. We’ll provide a detailed project timeline after the initial consultation.
@@ -73,13 +73,13 @@ const Question = ({
                 <motion.span
                     variants={{
                         open: {
-                            color: "rgba(3, 6, 23, 0)",
+                            color: "white",
                         },
                         closed: {
-                            color: "rgba(3, 6, 23, 1)",
+                            color: "grey",
                         },
                     }}
-                    className="bg-success bg-clip-text text-left text-lg font-medium"
+                    className="bg-white bg-clip-text text-left text-lg font-medium"
                 >
                     {title}
                 </motion.span>
@@ -97,7 +97,7 @@ const Question = ({
                 >
                     {/* <FiChevronDown className="text-2xl" /> */}
                     <svg width="15px" height="15px" viewBox="0 0 1024 1024" className="icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#000000" />
+                        <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#ffffff" />
                     </svg>
                 </motion.span>
             </button>
@@ -108,7 +108,7 @@ const Question = ({
                         height: open ? height : "0px",
                         marginBottom: open ? "24px" : "0px",
                     }}
-                    className="overflow-hidden text-slate-600"
+                    className="overflow-hidden text-white"
                 >
                     <div ref={ref}>{children}</div>
                 </motion.div>
